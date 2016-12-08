@@ -1,0 +1,17 @@
+<h1>My Car(s)</h1>
+<h2><%= @car.speed %> kph</h2>
+<h2><%= @car.info %></h2>
+
+<form action="/cars/accelerate" method="get">
+  <input type="submit" value="Accelerate"/>
+</form>
+
+<form action="/cars/brake" method="get">
+  <input type="submit" value="Brake"/>
+</form>
+
+<form action="/cars/lights" method="get">
+  <input type="submit" value="Lights On/Off"/>
+</form>
+
+<p>Lights: <%= @car.lights %></p>
